@@ -4,7 +4,6 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 public interface PongServer extends Remote {
-
     String initClient() throws RemoteException;
     BallRecord getBall() throws RemoteException;
     void addForCallback (String id, Client client) throws RemoteException;
